@@ -1,0 +1,24 @@
+1662379404296	geckodriver	INFO	Listening on 127.0.0.1:53152
+1662379407399	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53153" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileiRixQ3"
+1662379407772	Marionette	INFO	Marionette enabled
+1662379407778	Marionette	INFO	Listening on port 53159
+WebDriver BiDi listening on ws://localhost:53153
+1662379408064	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileiRixQ3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53153/devtools/browser/68943b2b-a6e5-41f1-abc3-175a186dd7f2
+1662379412293	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1662379415863	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 81: uncaught exception: AssertionError: Assertion failed: goog.dom.insertSiblingBefore expects non-null arguments
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 150: ReferenceError: _WidgetManager is not defined
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 26: uncaught exception: AssertionError: Assertion failed: goog.dom.insertSiblingBefore expects non-null arguments
+JavaScript error: https://static.criteo.net/js/ld/publishertag.prebid.123.js, line 2: TypeError: right-hand side of 'in' should be an object, got undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 4065 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662379420480	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+[Child 19316, MediaDecoderStateMachine #1] WARNING: Decoder=4f64480 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult __thiscall mozilla::RemoteVideoDecoderChild::InitIPDL(const mozilla::VideoInfo &, float, const CreateDecoderParams::OptionSet &, Maybe<layers::TextureFactoryIdentifier>, const Maybe<uint64_t> &): RemoteDecoderManager is not available.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+[Child 19316, MediaDecoderStateMachine #1] WARNING: Decoder=4f642b0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult __thiscall mozilla::RemoteVideoDecoderChild::InitIPDL(const mozilla::VideoInfo &, float, const CreateDecoderParams::OptionSet &, Maybe<layers::TextureFactoryIdentifier>, const Maybe<uint64_t> &): RemoteDecoderManager is not available.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+1662379420997	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1662379421959	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1662379426769	Marionette	INFO	Stopped listening on port 53159
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

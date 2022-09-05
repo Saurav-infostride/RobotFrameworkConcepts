@@ -1,0 +1,24 @@
+1662383463213	geckodriver	INFO	Listening on 127.0.0.1:59516
+1662383466315	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59517" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilesUUFkF"
+1662383466701	Marionette	INFO	Marionette enabled
+1662383466708	Marionette	INFO	Listening on port 59523
+WebDriver BiDi listening on ws://localhost:59517
+1662383466911	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilesUUFkF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59517/devtools/browser/1e92e208-1aed-46e4-98ae-9bc323af5cca
+[Child 18128, MediaDecoderStateMachine #1] WARNING: Decoder=4e639a0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult __thiscall mozilla::RemoteVideoDecoderChild::InitIPDL(const mozilla::VideoInfo &, float, const CreateDecoderParams::OptionSet &, Maybe<layers::TextureFactoryIdentifier>, const Maybe<uint64_t> &): RemoteDecoderManager is not available.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+[Child 18128, MediaDecoderStateMachine #1] WARNING: Decoder=4e63b70 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 18128, MediaDecoderStateMachine #1] WARNING: Decoder=4e63b70 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 148 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662383481045	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1662383653363	Marionette	INFO	Stopped listening on port 59523
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\SAURAV~1\AppData\Local\Temp\rust_mozprofilesUUFkF\protections.sqlite

@@ -1,0 +1,41 @@
+1662366166134	geckodriver	INFO	Listening on 127.0.0.1:63896
+1662366169259	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63897" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileooJRTR"
+1662366169637	Marionette	INFO	Marionette enabled
+1662366169642	Marionette	INFO	Listening on port 63905
+WebDriver BiDi listening on ws://localhost:63897
+1662366169933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileooJRTR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63897/devtools/browser/ffae9d26-20ed-4122-a7c0-d741133670e7
+JavaScript error: https://eus.rubiconproject.com/usync.js, line 4: SecurityError: Document.cookie getter: Forbidden in a sandboxed document without the 'allow-same-origin' flag.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 1370 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662366179806	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1662366180821	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 6401 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e63f10 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult __thiscall mozilla::RemoteVideoDecoderChild::InitIPDL(const mozilla::VideoInfo &, float, const CreateDecoderParams::OptionSet &, Maybe<layers::TextureFactoryIdentifier>, const Maybe<uint64_t> &): RemoteDecoderManager is not available.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e63f10 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi47957571, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e65300 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e65300 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi1303967, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e63f10 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e63f10 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi87462899, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e65130 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e65130 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi72329372, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e656a0 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e656a0 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi72329372, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/yahoovpaidtwoint215831825037/moatvideo.js#_moatApi72329372, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e654d0 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 14480, MediaDecoderStateMachine #1] WARNING: Decoder=4e654d0 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1662366401376	Marionette	INFO	Stopped listening on port 63905
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\SAURAV~1\AppData\Local\Temp\rust_mozprofileooJRTR\protections.sqlite

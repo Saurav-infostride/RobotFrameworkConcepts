@@ -1,0 +1,13 @@
+1662367751828	geckodriver	INFO	Listening on 127.0.0.1:50868
+1662367754951	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50869" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileFAUaB1"
+1662367755333	Marionette	INFO	Marionette enabled
+1662367755338	Marionette	INFO	Listening on port 50876
+WebDriver BiDi listening on ws://localhost:50869
+1662367755620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileFAUaB1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50869/devtools/browser/5f5b0a59-22a6-435b-a67c-a870413b6191
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 81: uncaught exception: AssertionError: Assertion failed: goog.dom.insertSiblingBefore expects non-null arguments
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 150: ReferenceError: _WidgetManager is not defined
+JavaScript error: https://www.techlistic.com/ezossp/https/resources.blogblog.com/blogblog/data/res/1339858486-indie_compiled.js?screx=1&sxcb=1a, line 26: uncaught exception: AssertionError: Assertion failed: goog.dom.insertSiblingBefore expects non-null arguments
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 4985 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662367818455	Marionette	INFO	Stopped listening on port 50876

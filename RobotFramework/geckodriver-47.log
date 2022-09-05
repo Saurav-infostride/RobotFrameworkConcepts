@@ -1,0 +1,14 @@
+1662387915833	geckodriver	INFO	Listening on 127.0.0.1:62836
+1662387918947	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62837" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileVNz4MP"
+1662387919325	Marionette	INFO	Marionette enabled
+1662387919330	Marionette	INFO	Listening on port 62844
+WebDriver BiDi listening on ws://localhost:62837
+1662387919609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileVNz4MP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62837/devtools/browser/caa0cfab-04e9-49f3-8b4c-d6df4ceffe42
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1662387923653	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://assets.msn.com/bundles/v1/bingHomepage/latest/weather-card.45187569e00ade170b28.js, line 5089: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662388048391	Marionette	INFO	Stopped listening on port 62844
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 11276, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723

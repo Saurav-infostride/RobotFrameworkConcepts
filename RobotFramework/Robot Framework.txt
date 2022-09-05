@@ -1,0 +1,13 @@
+1) Robot Framework is a generic text automation framework for acceptance testing.
+2) Acceptance test driven development.
+3) It uitlizes the keyword-driven testing approach.
+4) Provides test libraries implemented either with Python or Java, and user can create new higher-level keywords
+   from existing ones using the same syntax that is used for creating test cases.
+
+
+TO SETUP ROBOT FRAMEWORK
+Install Python
+Install PyCharm IDE
+Install Selenium
+Install Robot Framework
+Install Robot Framework Selenium library

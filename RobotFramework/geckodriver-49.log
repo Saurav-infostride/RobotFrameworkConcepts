@@ -1,0 +1,11 @@
+1662389293354	geckodriver	INFO	Listening on 127.0.0.1:63621
+1662389296453	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63622" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile06TjLM"
+1662389296843	Marionette	INFO	Marionette enabled
+1662389296849	Marionette	INFO	Listening on port 63628
+WebDriver BiDi listening on ws://localhost:63622
+1662389297049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile06TjLM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63622/devtools/browser/593cd544-5e58-4ab7-aaeb-ec0e56ba7018
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1662389301104	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://assets.msn.com/bundles/v1/bingHomepage/latest/weather-card.45187569e00ade170b28.js, line 5089: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

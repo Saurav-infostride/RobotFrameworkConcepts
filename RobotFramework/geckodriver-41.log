@@ -1,0 +1,14 @@
+1662386609316	geckodriver	INFO	Listening on 127.0.0.1:61465
+1662386612430	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61466" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileHn5Bh8"
+1662386612806	Marionette	INFO	Marionette enabled
+1662386612811	Marionette	INFO	Listening on port 61472
+WebDriver BiDi listening on ws://localhost:61466
+1662386613098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileHn5Bh8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61466/devtools/browser/2cc902b8-21e5-4fe7-a196-9df85c595eea
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 1162 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662386672552	Marionette	INFO	Stopped listening on port 61472
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
