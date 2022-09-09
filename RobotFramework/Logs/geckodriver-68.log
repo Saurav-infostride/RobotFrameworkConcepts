@@ -1,0 +1,14 @@
+1662631173169	geckodriver	INFO	Listening on 127.0.0.1:56603
+1662631176173	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56604" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile8Uc0N1"
+1662631176558	Marionette	INFO	Marionette enabled
+1662631176564	Marionette	INFO	Listening on port 56609
+WebDriver BiDi listening on ws://localhost:56604
+1662631176757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile8Uc0N1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56604/devtools/browser/f9aa300c-ebe8-4a67-9c72-c2267f48d43d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+1662631184488	Marionette	INFO	Stopped listening on port 56609
+!!! error running onStopped callback: TypeError: callback is not a function

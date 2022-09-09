@@ -1,0 +1,13 @@
+1662446070369	geckodriver	INFO	Listening on 127.0.0.1:49645
+1662446073466	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49646" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileHcAz1v"
+1662446073904	Marionette	INFO	Marionette enabled
+1662446073912	Marionette	INFO	Listening on port 49651
+WebDriver BiDi listening on ws://localhost:49646
+1662446074102	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileHcAz1v\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49646/devtools/browser/032641b7-5fda-45a5-8a5a-3be638360b84
+[Child 20476, MediaDecoderStateMachine #1] WARNING: Decoder=56639a0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - mozilla::MediaResult __thiscall mozilla::RemoteVideoDecoderChild::InitIPDL(const mozilla::VideoInfo &, float, const CreateDecoderParams::OptionSet &, Maybe<layers::TextureFactoryIdentifier>, const Maybe<uint64_t> &): RemoteDecoderManager is not available.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+[Child 20476, MediaDecoderStateMachine #1] WARNING: Decoder=5663d40 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:370
+[Child 20476, MediaDecoderStateMachine #1] WARNING: Decoder=5663d40 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+JavaScript warning: https://pagead2.googlesyndication.com/bg/dMUMwKlHRkKFxm324gu_shN2JBGfr2rZRInLP1vMiqM.js line 2 > eval line 5773 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662446115963	Marionette	INFO	Stopped listening on port 49651

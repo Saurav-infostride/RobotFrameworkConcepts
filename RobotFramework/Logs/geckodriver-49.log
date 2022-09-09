@@ -9,3 +9,5 @@ DevTools listening on ws://localhost:63622/devtools/browser/593cd544-5e58-4ab7-a
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
 1662389301104	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 JavaScript warning: https://assets.msn.com/bundles/v1/bingHomepage/latest/weather-card.45187569e00ade170b28.js, line 5089: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662391973589	Marionette	INFO	Stopped listening on port 63628
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

@@ -1,0 +1,367 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset161 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 *** Settings ***\par
+Documentation       Robot Framework 5 syntax recipes cheat sheet robot.\par
+...                 Demonstrates Robot Framework syntax in a concise format.\par
+\par
+Library             MyLibrary\par
+Library             MyLibrary    WITH NAME    HelloLibrary\par
+Library             MyLibrary    greeting=Howdy!    WITH NAME    HowdyLibrary\par
+Resource            keywords.robot\par
+Variables           variables.py\par
+\par
+Suite Setup         Log    Suite Setup!\par
+Suite Teardown      Log    Suite Teardown!\par
+Task Setup          Log    Task Setup!\par
+Task Teardown       Log    Task Teardown!\par
+Task Timeout        2 minutes\par
+\par
+\par
+*** Variables ***\par
+$\{STRING\}=                  cat\par
+$\{NUMBER\}=                  $\{1\}\par
+@\{LIST\}=                    one    two    three\par
+&\{DICTIONARY\}=              string=$\{STRING\}    number=$\{NUMBER\}    list=@\{LIST\}\par
+$\{ENVIRONMENT_VARIABLE\}=    %\{PATH=Default value\}\par
+\par
+\par
+*** Tasks ***\par
+Call keywords with a varying number of arguments\par
+    A keyword without arguments\par
+    A keyword with a required argument    Argument\par
+    A keyword with a required argument    argument=Argument\par
+    A keyword with an optional argument\par
+    A keyword with an optional argument    Argument\par
+    A keyword with an optional argument    argument=Argument\par
+    A keyword with any number of arguments\par
+    A keyword with any number of arguments    arg1    arg2    arg3    arg4    arg5\par
+    A keyword with one or more arguments    arg1\par
+    A keyword with one or more arguments    arg1    arg2    arg3\par
+\par
+Call a keyword that returns a value\par
+    $\{value\}=    A keyword that returns a value\par
+    Log    $\{value\}    # Return value\par
+\par
+Do conditional IF - ELSE IF - ELSE execution\par
+    IF    $\{NUMBER\} > 1\par
+        Log    Greater than one.\par
+    ELSE IF    "$\{STRING\}" == "dog"\par
+        Log    It's a dog!\par
+    ELSE\par
+        Log    Probably a cat.\par
+    END\par
+\par
+Loop a list\par
+    Log    $\{LIST\}    # ['one', 'two', 'three']\par
+    FOR    $\{item\}    IN    @\{LIST\}\par
+        Log    $\{item\}    # one, two, three\par
+    END\par
+    FOR    $\{item\}    IN    one    two    three\par
+        Log    $\{item\}    # one, two, three\par
+    END\par
+\par
+Loop a dictionary\par
+    Log    $\{DICTIONARY\}\par
+    # \{'string': 'cat', 'number': 1, 'list': ['one', 'two', 'three']\}\par
+    FOR    $\{key_value_tuple\}    IN    &\{DICTIONARY\}\par
+        Log    $\{key_value_tuple\}\par
+        # ('string', 'cat'), ('number', 1), ('list', ['one', 'two', 'three'])\par
+    END\par
+    FOR    $\{key\}    IN    @\{DICTIONARY\}\par
+        Log    $\{key\}=$\{DICTIONARY\}[$\{key\}]\par
+        # string=cat, number=1, list=['one', 'two', 'three']\par
+    END\par
+\par
+Loop a range from 0 to end index\par
+    FOR    $\{index\}    IN RANGE    10\par
+        Log    $\{index\}    # 0-9\par
+    END\par
+\par
+Loop a range from start to end index\par
+    FOR    $\{index\}    IN RANGE    1    10\par
+        Log    $\{index\}    # 1-9\par
+    END\par
+\par
+Loop a range from start to end index with steps\par
+    FOR    $\{index\}    IN RANGE    0    10    2\par
+        Log    $\{index\}    # 0, 2, 4, 6, 8\par
+    END\par
+\par
+Nest loops\par
+    @\{alphabets\}=    Create List    a    b    c\par
+    Log    $\{alphabets\}    # ['a', 'b', 'c']\par
+    @\{numbers\}=    Create List    $\{1\}    $\{2\}    $\{3\}\par
+    Log    $\{numbers\}    # [1, 2, 3]\par
+    FOR    $\{alphabet\}    IN    @\{alphabets\}\par
+        FOR    $\{number\}    IN    @\{numbers\}\par
+            Log    $\{alphabet\}$\{number\}\par
+            # a1, a2, a3, b1, b2, b3, c1, c2, c3\par
+        END\par
+    END\par
+\par
+Exit a loop on condition\par
+    FOR    $\{i\}    IN RANGE    5\par
+        IF    $\{i\} == 2    BREAK\par
+        Log    $\{i\}    # 0, 1\par
+    END\par
+\par
+Continue a loop from the next iteration on condition\par
+    FOR    $\{i\}    IN RANGE    3\par
+        IF    $\{i\} == 1    CONTINUE\par
+        Log    $\{i\}    # 0, 2\par
+    END\par
+\par
+Create a scalar variable\par
+    $\{animal\}=    Set Variable    dog\par
+    Log    $\{animal\}    # dog\par
+    Log    $\{animal\}[0]    # d\par
+    Log    $\{animal\}[-1]    # g\par
+\par
+Create a number variable\par
+    $\{\f1\lang1032\'f0\}=    Set Variable    $\{3.14\}\par
+    Log    $\{\'f0\}    # 3.14\par
+\par
+Create a list variable\par
+    @\{animals\}=    Create List    dog    cat    bear\par
+    Log    $\{animals\}    # ['dog', 'cat', 'bear']\par
+    Log    $\{animals\}[0]    # dog\par
+    Log    $\{animals\}[-1]    # bear\par
+\par
+Create a dictionary variable\par
+    &\{dictionary\}=    Create Dictionary    key1=value1    key2=value2\par
+    Log    $\{dictionary\}    # \{'key1': 'value1', 'key2': 'value2'\}\par
+    Log    $\{dictionary\}[key1]    # value1\par
+    Log    $\{dictionary.key2\}    # value2\par
+\par
+Access the items in a sequence (list, string)\par
+    $\{string\}=    Set Variable    Hello world!\par
+    Log    $\{string\}[0]    # H\par
+    Log    $\{string\}[:5]    # Hello\par
+    Log    $\{string\}[6:]    # world!\par
+    Log    $\{string\}[-1]    # !\par
+    @\{list\}=    Create List    one    two    three    four    five\par
+    Log    $\{list\}    # ['one', 'two', 'three', 'four', 'five']\par
+    Log    $\{list\}[0:6:2]    # ['one', 'three', 'five']\par
+\par
+Call a custom Python library\par
+    $\{greeting\}=    MyLibrary.Get Greeting\par
+    Log    $\{greeting\}    # Hello!\par
+    $\{greeting\}=    HelloLibrary.Get Greeting\par
+    Log    $\{greeting\}    # Hello!\par
+    $\{greeting\}=    HowdyLibrary.Get Greeting\par
+    Log    $\{greeting\}    # Howdy!\par
+\par
+Call a keyword from a separate resource file\par
+    My keyword in a separate resource file\par
+\par
+Access a variable in a separate variable file\par
+    Log    $\{MY_VARIABLE_FROM_A_SEPARATE_VARIABLE_FILE\}\par
+\par
+Split arguments to multiple lines\par
+    A keyword with any number of arguments\par
+    ...    arg1\par
+    ...    arg2\par
+    ...    arg3\par
+\par
+Log available variables\par
+    Log Variables\par
+    # $\{/\} = /\par
+    # &\{DICTIONARY\} = \{ string=cat | number=1 | list=['one', 'two', 'three'] \}\par
+    # $\{OUTPUT_DIR\} = /Users/<username>/...\par
+    # ...\par
+\par
+Evaluate Python expressions\par
+    $\{path\}=    Evaluate    os.environ.get("PATH")\par
+    $\{path\}=    Set Variable    $\{\{os.environ.get("PATH")\}\}\par
+\par
+Use special variables\par
+    Log    $\{EMPTY\}    # Like the $\{SPACE\}, but without the space.\par
+    Log    $\{False\}    # Boolean False.\par
+    Log    $\{None\}    # Python None\par
+    Log    $\{null\}    # Java null.\par
+    Log    $\{SPACE\}    # ASCII space (\\x20).\par
+    Log    $\{SPACE * 4\}    # Four spaces.\par
+    Log    "$\{SPACE\}"    # Quoted space (" ").\par
+    Log    $\{True\}    # Boolean True.\par
+\par
+TRY / EXCEPT: Catch any exception\par
+    TRY\par
+        Fail\par
+    EXCEPT\par
+        Log    EXCEPT with no arguments catches any exception.\par
+    END\par
+\par
+TRY / EXCEPT: Catch an exception by exact message\par
+    TRY\par
+        Fail    Error message\par
+    EXCEPT    Error message\par
+        Log    Catches only "Error message" exceptions.\par
+        Log    Enables error-specific exception handling.\par
+    END\par
+\par
+TRY / EXCEPT: Multiple EXCEPT statements\par
+    TRY\par
+        Fail    Error message\par
+    EXCEPT    Another error message\par
+        Log    Catches only "Another error message" exceptions.\par
+    EXCEPT    Error message\par
+        Log    Catches the "Error message" exception.\par
+    END\par
+\par
+TRY / EXCEPT: Multiple messages in EXCEPT statement\par
+    TRY\par
+        Fail    CCC\par
+    EXCEPT    AAA    BBB    CCC\par
+        Log    Catches any "AAA", "BBB", or "CCC" exception.\par
+    END\par
+\par
+TRY / EXCEPT: Catch a specific exception, or an unexpected exception\par
+    TRY\par
+        Fail    Error message\par
+    EXCEPT    Another message\par
+        Log    Catches only "Another message" exceptions.\par
+    EXCEPT\par
+        Log    Catches any exception.\par
+        Log    Useful for handling unexpected exceptions.\par
+    END\par
+\par
+TRY / EXCEPT: Catch exceptions where the message starts with\par
+    TRY\par
+        Fail    A long error message with lots of details\par
+    EXCEPT    A long error message    type=start\par
+        Log    Matches the start of an error message.\par
+    END\par
+\par
+TRY / EXCEPT: Capture the error message\par
+    TRY\par
+        Fail    Goodbye, world!\par
+    EXCEPT    AS    $\{error_message\}\par
+        Log    $\{error_message\}    # Goodbye, world!\par
+    END\par
+\par
+TRY / EXCEPT: Using ELSE when no exceptions occured\par
+    TRY\par
+        Log    All good!\par
+    EXCEPT    Error message\par
+        Log    An error occured.\par
+    ELSE\par
+        Log    No error occured.\par
+    END\par
+\par
+TRY / EXCEPT / FINALLY: Always execute code no matter if exceptions or not\par
+    TRY\par
+        Log    All good!\par
+    FINALLY\par
+        Log    FINALLY is always executed.\par
+    END\par
+    TRY\par
+        Fail    Catastrophic failure!\par
+    EXCEPT\par
+        Log    Catches any exception.\par
+    FINALLY\par
+        Log    FINALLY is always executed.\par
+    END\par
+\par
+TRY / EXCEPT / ELSE / FINALLY: All together!\par
+    TRY\par
+        Fail    Error message\par
+    EXCEPT\par
+        Log    Executed if any exception occurs.\par
+    ELSE\par
+        Log    Executed if no exceptions occur.\par
+    FINALLY\par
+        Log    FINALLY is always executed.\par
+    END\par
+\par
+TRY / EXCEPT: Glob pattern matching\par
+    TRY\par
+        Fail    My error: 99 occured\par
+    EXCEPT    My error: *    type=glob\par
+        Log    Catches by glob pattern matching.\par
+    END\par
+\par
+TRY / EXCEPT: Regular expression matching\par
+    TRY\par
+        Fail    error 99 occured\par
+    EXCEPT    [Ee]rror {{\field{\*\fldinst{HYPERLINK "\\\\\\\\d+"}}{\fldrslt{\\\\d+\ul0\cf0}}}}\f1\fs22  occured    type=regexp\par
+        Log    Catches by regular expression pattern matching.\par
+    END\par
+\par
+WHILE: Loop while the default limit (10000) is hit\par
+    TRY\par
+        WHILE    True\par
+            Log    Executed until the default loop limit (10000) is hit.\par
+        END\par
+    EXCEPT    WHILE loop was aborted    type=start\par
+        Log    The loop did not finish within the limit.\par
+    END\par
+\par
+WHILE: Loop while the given limit is hit\par
+    TRY\par
+        WHILE    True    limit=10\par
+            Log    Executed until the given loop limit (10) is hit.\par
+        END\par
+    EXCEPT    WHILE loop was aborted    type=start\par
+        Log    The loop did not finish within the limit.\par
+    END\par
+\par
+WHILE: Loop while condition evaluates to True\par
+    $\{x\}=    Set Variable    $\{0\}\par
+    WHILE    $\{x\} < 3\par
+        Log    Executed as long as the condition is True.\par
+        $\{x\}=    Evaluate    $\{x\} + 1\par
+    END\par
+\par
+WHILE: Skip a loop iteration with CONTINUE\par
+    $\{x\}=    Set Variable    $\{0\}\par
+    WHILE    $\{x\} < 3\par
+        $\{x\}=    Evaluate    $\{x\} + 1\par
+        #    Skip this iteration.\par
+        IF    $\{x\} == 2    CONTINUE\par
+        Log    x = $\{x\}    # x = 1, x = 3\par
+    END\par
+\par
+WHILE: Exit loop with BREAK\par
+    WHILE    True\par
+        BREAK\par
+        Log    This will not be logged.\par
+    END\par
+\par
+\par
+*** Keywords ***\par
+A keyword without arguments\par
+    Log    No arguments.\par
+\par
+A keyword with a required argument\par
+    [Arguments]    $\{argument\}\par
+    Log    Required argument: $\{argument\}\par
+\par
+A keyword with an optional argument\par
+    [Arguments]    $\{argument\}=Default value\par
+    Log    Optional argument: $\{argument\}\par
+\par
+A keyword with any number of arguments\par
+    [Arguments]    @\{varargs\}\par
+    Log    Any number of arguments: @\{varargs\}\par
+\par
+A keyword with one or more arguments\par
+    [Arguments]    $\{argument\}    @\{varargs\}\par
+    Log    One or more arguments: $\{argument\} @\{varargs\}\par
+\par
+A keyword that returns a value\par
+    RETURN    Return value\par
+\par
+RETURN: Return a value from a keyword\par
+    IF    True    RETURN    It is true!    ELSE    RETURN    It is not true!\par
+\par
+RETURN: Return without a value\par
+    IF    True    RETURN\par
+    Log    This will not be logged.\par
+\par
+A keyword with documentation\par
+    [Documentation]    This is keyword documentation.\par
+    No Operation\par
+\f0\lang9\par
+}
+ 

@@ -2,8 +2,8 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${browser}  ff
-${url}   https://demo.nopcommerce.com/
+${browser}    ff
+${url}    https://demo.nopcommerce.com/
 
 *** Test Cases ***
 

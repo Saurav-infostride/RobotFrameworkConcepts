@@ -1,0 +1,11 @@
+1662648043909	geckodriver	INFO	Listening on 127.0.0.1:59833
+1662648047015	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59834" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileOVgSzz"
+1662648047406	Marionette	INFO	Marionette enabled
+1662648047412	Marionette	INFO	Listening on port 59840
+WebDriver BiDi listening on ws://localhost:59834
+1662648047599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileOVgSzz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59834/devtools/browser/0587c0cc-4450-4ff5-b38f-878baff65d13
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+1662648114580	Marionette	INFO	Stopped listening on port 59840

@@ -1,0 +1,15 @@
+1662471359361	geckodriver	INFO	Listening on 127.0.0.1:52994
+1662471362445	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52995" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilekLp4GP"
+1662471362811	Marionette	INFO	Marionette enabled
+1662471362817	Marionette	INFO	Listening on port 53008
+WebDriver BiDi listening on ws://localhost:52995
+1662471363101	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilekLp4GP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52995/devtools/browser/c64af3aa-b1e9-4f1d-9dcc-ee21757b1933
+JavaScript error: https://in.search.yahoo.com/?fr2=inr, line 1: TypeError: YAHOO.LL is undefined
+JavaScript error: https://in.search.yahoo.com/?fr2=inr, line 1: TypeError: YAHOO.LL is undefined
+JavaScript error: https://in.search.yahoo.com/?fr2=inr, line 1: TypeError: YAHOO.LL is undefined
+JavaScript error: https://in.search.yahoo.com/?fr2=inr, line 1: TypeError: YAHOO.LL is undefined
+JavaScript error: https://in.search.yahoo.com/?fr2=inr, line 1: TypeError: YAHOO.LL is undefined
+1662471370610	Marionette	INFO	Stopped listening on port 53008
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
