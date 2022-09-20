@@ -23,7 +23,7 @@ Handling DropDowns and Lists
 
     # Implicit wait
     Set Selenium Implicit Wait    10 seconds
-    Select From List By Label    continents    Europe
+    Select From List By Label    Customer roles    Europe
     Select From List By Index    continents    6
     # List box
     Select From List By Label    selenium_commands    Browser Commands

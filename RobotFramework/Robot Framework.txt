@@ -18,9 +18,11 @@ Create logs and take screenshots itself
 TO SETUP ROBOT FRAMEWORK
 Install Python
 Install PyCharm IDE
-Install Selenium
-Install Robot Framework
-Install Robot Framework Selenium library
+Then in CMD
+pip install selenium
+pip install robot-framework
+pip install robot-framework-seleniumlibrary
+pip install robotframework-datadriver
 
 ROBOT FRAMEWORK FEATURES 	
 1) Tabular format for test cases

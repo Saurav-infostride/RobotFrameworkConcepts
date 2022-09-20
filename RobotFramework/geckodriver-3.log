@@ -1,0 +1,10 @@
+1663684132814	geckodriver	INFO	Listening on 127.0.0.1:57421
+1663684135923	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57422" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilecSNYg3"
+1663684136290	Marionette	INFO	Marionette enabled
+1663684136295	Marionette	INFO	Listening on port 57428
+WebDriver BiDi listening on ws://localhost:57422
+1663684136586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofilecSNYg3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57422/devtools/browser/d95581d1-d404-41f2-98f0-8e6a9ce9d48d
+JavaScript error: https://www.highcharts.com/blog/wp-content/themes/wordpress-theme-new-design-child/js/child-theme.min.js, line 6: ReferenceError: products is not defined
+1663684169472	Marionette	INFO	Stopped listening on port 57428
