@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:36:30.956" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Alerts" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\Alerts.robot">
+<test id="s1-s1-t1" name="Handling Alerts" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.137" level="INFO">Opening browser 'ff' to base url 'https://demo.automationtesting.in/Alerts.html'.</msg>
+<msg timestamp="20220921 15:36:33.141" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\0\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.136" endtime="20220921 15:38:07.463"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:07.464" endtime="20220921 15:38:07.465"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@class='btn btn-danger']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:07.468" level="INFO">Clicking button 'xpath://button[@class='btn btn-danger']'.</msg>
+<status status="PASS" starttime="20220921 15:38:07.465" endtime="20220921 15:38:18.426"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20220921 15:38:18.428" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20220921 15:38:18.427" endtime="20220921 15:39:12.457"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.134" endtime="20220921 15:39:12.459"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.060" endtime="20220921 15:39:12.463"/>
+</suite>
+<status status="PASS" starttime="20220921 15:36:30.979" endtime="20220921 15:39:12.470"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Alerts">Suites.Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

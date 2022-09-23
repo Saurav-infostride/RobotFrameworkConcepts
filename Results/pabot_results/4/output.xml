@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:36:31.039" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DataDrivenUsingExcel" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\DataDrivenUsingExcel.robot">
+<kw name="Open My Browser" library="LoginResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:35.652" level="INFO">Opening browser 'ff' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<msg timestamp="20220921 15:36:35.654" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\4\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:35.652" endtime="20220921 15:37:22.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:22.313" endtime="20220921 15:37:22.318"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:35.651" endtime="20220921 15:37:22.319"/>
+</kw>
+<test id="s1-s1-t1" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:22.324" endtime="20220921 15:37:22.325"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:22.330" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:22.326" endtime="20220921 15:37:30.031"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.325" endtime="20220921 15:37:30.032"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:30.035" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:30.033" endtime="20220921 15:37:36.886"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:30.032" endtime="20220921 15:37:36.887"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:36.889" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:36.888" endtime="20220921 15:37:45.960"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.887" endtime="20220921 15:37:45.960"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:51.032" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:45.963" endtime="20220921 15:37:51.032"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:45.963" endtime="20220921 15:37:51.033"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.323" endtime="20220921 15:37:51.033"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.320" endtime="20220921 15:37:51.034"/>
+</test>
+<test id="s1-s1-t2" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:51.040" endtime="20220921 15:37:51.041"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:51.044" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:51.042" endtime="20220921 15:37:58.330"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.041" endtime="20220921 15:37:58.330"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:58.333" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:58.332" endtime="20220921 15:38:04.585"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:58.331" endtime="20220921 15:38:04.586"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:04.588" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:04.587" endtime="20220921 15:38:10.250"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:04.586" endtime="20220921 15:38:10.250"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:14.275" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:10.252" endtime="20220921 15:38:14.275"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:10.251" endtime="20220921 15:38:14.276"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.039" endtime="20220921 15:38:14.276"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.035" endtime="20220921 15:38:14.277"/>
+</test>
+<test id="s1-s1-t3" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>adm@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:14.282" endtime="20220921 15:38:14.283"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:14.285" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:38:14.285" endtime="20220921 15:38:20.362"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.284" endtime="20220921 15:38:20.363"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:20.365" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:38:20.364" endtime="20220921 15:38:26.438"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:20.363" endtime="20220921 15:38:26.438"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:26.439" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:26.439" endtime="20220921 15:38:31.256"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:26.438" endtime="20220921 15:38:31.256"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:35.288" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:31.257" endtime="20220921 15:38:35.289"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:31.257" endtime="20220921 15:38:35.290"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.281" endtime="20220921 15:38:35.291"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.278" endtime="20220921 15:38:35.291"/>
+</test>
+<kw name="Close Browsers" library="LoginResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220921 15:38:35.296" endtime="20220921 15:38:38.138"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:35.294" endtime="20220921 15:38:38.138"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:31.272" endtime="20220921 15:38:38.139"/>
+</suite>
+<status status="PASS" starttime="20220921 15:36:31.133" endtime="20220921 15:38:38.142"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="DataDrivenUsingExcel">Suites.DataDrivenUsingExcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220921 15:37:51.035" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingExcel'.</msg>
+<msg timestamp="20220921 15:38:14.278" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingExcel'.</msg>
+</errors>
+</robot>

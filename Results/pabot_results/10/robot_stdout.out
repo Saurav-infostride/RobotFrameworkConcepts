@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.NavigationTest                                                         
+==============================================================================
+MultipleBrowsers                                                      https://www.bing.com/
+{$loc}
+| PASS |
+------------------------------------------------------------------------------
+Suites.NavigationTest                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\10\output.xml

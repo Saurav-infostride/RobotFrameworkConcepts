@@ -1,0 +1,21 @@
+datasources:bd4c4c18ae560ca2e4f39e4c763a88c11c4a097a
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:f76e7152c6abdf380dba374b3dcdd90f15afb75d
+--suite Suites.Alerts
+--suite Suites.CloseSingleAndMultipleBrowsers
+--suite Suites.DataDriven
+--suite Suites.DataDrivenUsingCsv
+--suite Suites.DataDrivenUsingExcel
+--suite Suites.DropDown
+--suite Suites.Frames
+--suite Suites.InputBox
+--suite Suites.Keyword
+--suite Suites.MultipleBrowser
+--suite Suites.NavigationTest
+--suite Suites.RadioButtons
+--suite Suites.TC1
+--suite Suites.TabbedWindows
+--suite Suites.TableHandling
+--suite Suites.UserKeywords
+--suite Suites.WaitAndTime

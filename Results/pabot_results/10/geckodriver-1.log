@@ -1,0 +1,11 @@
+1663754793564	geckodriver	INFO	Listening on 127.0.0.1:61645
+1663754796927	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61646" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileOU0xyw"
+1663754816308	Marionette	INFO	Marionette enabled
+1663754816373	Marionette	INFO	Listening on port 61745
+WebDriver BiDi listening on ws://localhost:61646
+1663754816936	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofileOU0xyw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61646/devtools/browser/532644e7-d686-4fb3-80d1-dd3d01d8d836
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
+1663754885434	Marionette	INFO	Stopped listening on port 61745
+!!! error running onStopped callback: TypeError: callback is not a function

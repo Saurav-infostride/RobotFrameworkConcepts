@@ -1,0 +1,15 @@
+1663754793718	geckodriver	INFO	Listening on 127.0.0.1:61659
+1663754797016	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61660" "-no-remote" "-profile" "C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile3VB8aX"
+1663754800072	Marionette	INFO	Marionette enabled
+1663754800122	Marionette	INFO	Listening on port 61736
+WebDriver BiDi listening on ws://localhost:61660
+1663754801249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAURAV~1\\AppData\\Local\\Temp\\rust_mozprofile3VB8aX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61660/devtools/browser/d0001cb5-c378-49a5-90c2-233692315d87
+1663754844638	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1663754857413	Marionette	INFO	Stopped listening on port 61736
+!!! error running onStopped callback: TypeError: callback is not a function

@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:39:32.117" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Alerts" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\Alerts.robot">
+<test id="s1-s1-t1" name="Handling Alerts" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.137" level="INFO">Opening browser 'ff' to base url 'https://demo.automationtesting.in/Alerts.html'.</msg>
+<msg timestamp="20220921 15:36:33.141" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\0\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.136" endtime="20220921 15:38:07.463"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:07.464" endtime="20220921 15:38:07.465"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@class='btn btn-danger']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:07.468" level="INFO">Clicking button 'xpath://button[@class='btn btn-danger']'.</msg>
+<status status="PASS" starttime="20220921 15:38:07.465" endtime="20220921 15:38:18.426"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20220921 15:38:18.428" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20220921 15:38:18.427" endtime="20220921 15:39:12.457"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.134" endtime="20220921 15:39:12.459"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.060" endtime="20220921 15:39:12.463"/>
+</suite>
+<suite id="s1-s2" name="NavigationTest" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\NavigationTest.robot">
+<test id="s1-s2-t1" name="MultipleBrowsers" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:36:32.528" endtime="20220921 15:36:32.529"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.530" level="INFO">Opening browser 'ff' to base url 'https://www.bing.com/'.</msg>
+<msg timestamp="20220921 15:36:32.532" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\10\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.530" endtime="20220921 15:37:26.669"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:26.670" endtime="20220921 15:37:28.677"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220921 15:37:30.688" level="INFO">${loc} = https://www.bing.com/</msg>
+<status status="PASS" starttime="20220921 15:37:28.678" endtime="20220921 15:37:30.688"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:30.688" endtime="20220921 15:37:30.690"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url2}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220921 15:37:30.691" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20220921 15:37:30.690" endtime="20220921 15:38:00.854"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220921 15:38:02.867" level="INFO">${loc} = https://www.google.com/</msg>
+<status status="PASS" starttime="20220921 15:38:00.855" endtime="20220921 15:38:02.867"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>{$loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:38:02.868" endtime="20220921 15:38:02.869"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220921 15:38:02.869" endtime="20220921 15:38:05.431"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:38:05.431" endtime="20220921 15:38:11.219"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.527" endtime="20220921 15:38:11.219"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.318" endtime="20220921 15:38:11.220"/>
+</suite>
+<suite id="s1-s3" name="RadioButtons" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\RadioButtons.robot">
+<test id="s1-s3-t1" name="TestingRadioButtons and CheckBoxes" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.505" level="INFO">Opening browser 'ff' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<msg timestamp="20220921 15:36:33.507" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\11\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.504" endtime="20220921 15:38:13.305"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:38:13.306" endtime="20220921 15:38:13.309"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:13.310" endtime="20220921 15:38:13.310"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220921 15:38:13.310" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20220921 15:38:13.310" endtime="20220921 15:38:20.114"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220921 15:38:20.116" level="INFO">Selecting '1' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20220921 15:38:20.115" endtime="20220921 15:38:26.761"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220921 15:38:26.765" level="INFO">Selecting '2' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20220921 15:38:26.762" endtime="20220921 15:38:33.520"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>3</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220921 15:38:33.521" level="INFO">Selecting '3' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20220921 15:38:33.520" endtime="20220921 15:38:40.290"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>4</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220921 15:38:40.291" level="INFO">Selecting '4' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20220921 15:38:40.290" endtime="20220921 15:38:47.034"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Automation Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:47.046" level="INFO">Selecting checkbox 'Automation Tester'.</msg>
+<status status="PASS" starttime="20220921 15:38:47.035" endtime="20220921 15:38:55.848"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Manual Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:55.851" level="INFO">Selecting checkbox 'Manual Tester'.</msg>
+<status status="PASS" starttime="20220921 15:38:55.849" endtime="20220921 15:39:04.188"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>Manual Tester</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20220921 15:39:04.191" level="INFO">Unselecting checkbox 'Manual Tester'.</msg>
+<status status="PASS" starttime="20220921 15:39:04.189" endtime="20220921 15:39:12.982"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:39:12.984" endtime="20220921 15:39:16.184"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.502" endtime="20220921 15:39:16.185"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.972" endtime="20220921 15:39:16.188"/>
+</suite>
+<suite id="s1-s4" name="TC1" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\TC1.robot">
+<test id="s1-s4-t1" name="LoginTest" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.878" level="INFO">Opening browser 'ff' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg timestamp="20220921 15:36:32.879" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\12\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.877" endtime="20220921 15:37:24.372"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:24.372" endtime="20220921 15:37:24.378"/>
+</kw>
+<kw name="loginToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:24.380" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20220921 15:37:24.379" endtime="20220921 15:37:27.272"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:27.276" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:27.276" endtime="20220921 15:37:28.769"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:28.770" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:28.769" endtime="20220921 15:37:28.983"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:28.985" level="INFO">Clicking element 'xpath://button[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20220921 15:37:28.984" endtime="20220921 15:37:30.081"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:24.378" endtime="20220921 15:37:30.081"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:30.081" endtime="20220921 15:37:32.287"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.875" endtime="20220921 15:37:32.287"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.082" endtime="20220921 15:37:32.287"/>
+</suite>
+<suite id="s1-s5" name="TabbedWindows" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\TabbedWindows.robot">
+<test id="s1-s5-t1" name="TabbedWindowsTest" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.358" level="INFO">Opening browser 'ff' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<msg timestamp="20220921 15:36:32.360" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\13\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.357" endtime="20220921 15:38:03.564"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:03.565" endtime="20220921 15:38:03.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a//button[contains(text(),'click')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:03.567" level="INFO">Clicking element 'xpath://a//button[contains(text(),'click')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:03.566" endtime="20220921 15:38:08.836"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title:Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220921 15:38:08.836" endtime="20220921 15:38:35.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_navbar"]/ul/li[4]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:35.076" level="INFO">Clicking element 'xpath://*[@id="main_navbar"]/ul/li[4]/a/span'.</msg>
+<status status="PASS" starttime="20220921 15:38:35.074" endtime="20220921 15:38:39.860"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:38:39.860" endtime="20220921 15:38:43.110"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.355" endtime="20220921 15:38:43.111"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.264" endtime="20220921 15:38:43.112"/>
+</suite>
+<suite id="s1-s6" name="TableHandling" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\TableHandling.robot">
+<test id="s1-s6-t1" name="TableValidations" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.991" level="INFO">Opening browser 'firefox' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg timestamp="20220921 15:36:32.992" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\14\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.990" endtime="20220921 15:37:36.075"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:36.075" endtime="20220921 15:37:36.082"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.300" level="INFO">${rows} = 7</msg>
+<status status="PASS" starttime="20220921 15:37:36.082" endtime="20220921 15:37:44.300"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${cols}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.310" level="INFO">${cols} = 4</msg>
+<status status="PASS" starttime="20220921 15:37:44.300" endtime="20220921 15:37:44.311"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.311" endtime="20220921 15:37:44.312"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${cols}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.312" endtime="20220921 15:37:44.313"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${data}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[5]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.859" level="INFO">${data} = Master In Selenium</msg>
+<status status="PASS" starttime="20220921 15:37:44.313" endtime="20220921 15:37:44.859"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.859" endtime="20220921 15:37:44.860"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" starttime="20220921 15:37:44.861" endtime="20220921 15:37:45.014"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20220921 15:37:49.474" level="INFO">Table cell contains 'Mukesh'.</msg>
+<status status="PASS" starttime="20220921 15:37:45.015" endtime="20220921 15:37:49.475"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20220921 15:37:49.475" endtime="20220921 15:37:51.191"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:51.191" endtime="20220921 15:37:54.648"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.986" endtime="20220921 15:37:54.649"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.335" endtime="20220921 15:37:54.651"/>
+</suite>
+<suite id="s1-s7" name="UserKeywords" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\UserKeywords.robot">
+<test id="s1-s7-t1" name="TC1" line="11">
+<kw name="launchBrowser" library="Resource">
+<var>${PageTitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.981" level="INFO">Opening browser 'ff' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20220921 15:36:32.982" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\15\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.980" endtime="20220921 15:37:39.183"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:39.183" endtime="20220921 15:37:39.193"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220921 15:37:39.197" level="INFO">${title} = Google</msg>
+<status status="PASS" starttime="20220921 15:37:39.193" endtime="20220921 15:37:39.197"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:39.197" endtime="20220921 15:37:44.125"/>
+</kw>
+<msg timestamp="20220921 15:37:44.126" level="INFO">${PageTitle} = Google</msg>
+<status status="PASS" starttime="20220921 15:36:32.979" endtime="20220921 15:37:44.127"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PageTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.127" endtime="20220921 15:37:44.127"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.978" endtime="20220921 15:37:44.128"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.397" endtime="20220921 15:37:44.129"/>
+</suite>
+<suite id="s1-s8" name="WaitAndTime" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\WaitAndTime.robot">
+<test id="s1-s8-t1" name="Wait And Timeouts" line="9">
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20220921 15:37:35.259" level="INFO">${speed} = 0 seconds</msg>
+<status status="PASS" starttime="20220921 15:37:35.258" endtime="20220921 15:37:35.259"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:35.260" endtime="20220921 15:37:35.260"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:37:35.261" level="INFO">Opening browser 'ff' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<msg timestamp="20220921 15:37:35.263" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\16\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:37:35.261" endtime="20220921 15:38:10.180"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:38:10.181" endtime="20220921 15:38:10.186"/>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<msg timestamp="20220921 15:38:10.187" level="INFO">${time} = 5 seconds</msg>
+<status status="PASS" starttime="20220921 15:38:10.186" endtime="20220921 15:38:10.187"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:38:10.187" endtime="20220921 15:38:10.188"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>AUTOMATION PRACTICE ME</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220921 15:38:10.188" endtime="20220921 15:38:10.243"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:10.243" endtime="20220921 15:38:10.244"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220921 15:38:10.244" endtime="20220921 15:38:12.251"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>Europe</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220921 15:38:12.252" level="INFO">Selecting options from selection list 'continents' by label Europe.</msg>
+<status status="PASS" starttime="20220921 15:38:12.251" endtime="20220921 15:38:24.568"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220921 15:38:24.569" level="INFO">Selecting options from selection list 'continents' by index 6.</msg>
+<status status="PASS" starttime="20220921 15:38:24.568" endtime="20220921 15:38:51.207"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220921 15:38:51.210" level="INFO">Selecting options from selection list 'selenium_commands' by label Browser Commands.</msg>
+<status status="PASS" starttime="20220921 15:38:51.208" endtime="20220921 15:39:03.587"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220921 15:39:03.588" level="INFO">Selecting options from selection list 'selenium_commands' by label WebElement Commands.</msg>
+<status status="PASS" starttime="20220921 15:39:03.587" endtime="20220921 15:39:15.906"/>
+</kw>
+<kw name="Unselect From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220921 15:39:15.909" level="INFO">Un-selecting options from selection list 'selenium_commands' by label Browser Commands.</msg>
+<status status="PASS" starttime="20220921 15:39:15.908" endtime="20220921 15:39:28.229"/>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20220921 15:39:28.232" level="INFO">${speed} = 2 seconds</msg>
+<status status="PASS" starttime="20220921 15:39:28.230" endtime="20220921 15:39:28.233"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:39:28.233" endtime="20220921 15:39:28.236"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:39:28.237" endtime="20220921 15:39:31.569"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:35.257" endtime="20220921 15:39:31.571"/>
+</test>
+<status status="PASS" starttime="20220921 15:37:34.596" endtime="20220921 15:39:31.574"/>
+</suite>
+<suite id="s1-s9" name="CloseSingleAndMultipleBrowsers" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\CloseSingleAndMultipleBrowsers.robot">
+<test id="s1-s9-t1" name="Checking Closing Of Single And Multiple Browsers" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.298" level="INFO">Opening browser 'ff' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<msg timestamp="20220921 15:36:32.299" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\1\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.297" endtime="20220921 15:37:27.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:27.316" endtime="20220921 15:37:27.320"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:37:27.320" level="INFO">Opening browser 'ff' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20220921 15:37:27.320" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\1\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220921 15:37:27.320" endtime="20220921 15:37:50.222"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:50.223" endtime="20220921 15:37:50.230"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220921 15:37:50.230" endtime="20220921 15:37:59.655"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.295" endtime="20220921 15:37:59.655"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.025" endtime="20220921 15:37:59.657"/>
+</suite>
+<suite id="s1-s10" name="DataDriven" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\DataDriven.robot">
+<kw name="Open My Browser" library="LoginResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.470" level="INFO">Opening browser 'ff' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<msg timestamp="20220921 15:36:33.471" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\2\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.469" endtime="20220921 15:37:24.617"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:24.617" endtime="20220921 15:37:24.622"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.468" endtime="20220921 15:37:24.623"/>
+</kw>
+<test id="s1-s10-t1" name="Right user empty pass" line="9">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:24.629" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:24.628" endtime="20220921 15:37:25.826"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:24.627" endtime="20220921 15:37:25.827"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:25.829" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:25.828" endtime="20220921 15:37:25.884"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:25.827" endtime="20220921 15:37:25.884"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:25.886" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:25.886" endtime="20220921 15:37:29.468"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:25.884" endtime="20220921 15:37:29.469"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:29.516" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:29.470" endtime="20220921 15:37:29.516"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.469" endtime="20220921 15:37:29.517"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:24.625" endtime="20220921 15:37:29.517"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:24.624" endtime="20220921 15:37:29.517"/>
+</test>
+<test id="s1-s10-t2" name="Right user wrong pass" line="10">
+<kw name="Invalid login">
+<arg>admin@yourstore.com</arg>
+<arg>xyz</arg>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:29.523" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:29.522" endtime="20220921 15:37:29.908"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.521" endtime="20220921 15:37:29.908"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:29.910" level="INFO">Typing text 'xyz' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:29.909" endtime="20220921 15:37:29.962"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.908" endtime="20220921 15:37:29.962"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:29.964" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:29.963" endtime="20220921 15:37:36.836"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.963" endtime="20220921 15:37:36.837"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:36.898" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:36.838" endtime="20220921 15:37:36.898"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.837" endtime="20220921 15:37:36.898"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.520" endtime="20220921 15:37:36.898"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.519" endtime="20220921 15:37:36.898"/>
+</test>
+<test id="s1-s10-t3" name="Wrong user right pass" line="11">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:36.905" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:36.904" endtime="20220921 15:37:43.107"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.903" endtime="20220921 15:37:43.107"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:43.110" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:43.109" endtime="20220921 15:37:43.173"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:43.108" endtime="20220921 15:37:43.173"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:43.175" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:43.174" endtime="20220921 15:37:51.640"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:43.174" endtime="20220921 15:37:51.640"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:52.932" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:51.642" endtime="20220921 15:37:52.932"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.641" endtime="20220921 15:37:52.932"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.902" endtime="20220921 15:37:52.933"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.901" endtime="20220921 15:37:52.933"/>
+</test>
+<test id="s1-s10-t4" name="Wrong user empty pass" line="12">
+<kw name="Invalid login">
+<arg>adm@yourstore.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:52.940" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:52.939" endtime="20220921 15:37:53.830"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:52.938" endtime="20220921 15:37:53.830"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:53.833" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:53.832" endtime="20220921 15:37:55.285"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:53.831" endtime="20220921 15:37:55.285"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:55.287" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:55.286" endtime="20220921 15:37:56.488"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:55.286" endtime="20220921 15:37:56.488"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:56.520" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:56.490" endtime="20220921 15:37:56.520"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:56.489" endtime="20220921 15:37:56.521"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:52.936" endtime="20220921 15:37:56.521"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:52.934" endtime="20220921 15:37:56.522"/>
+</test>
+<kw name="Close Browsers" library="LoginResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220921 15:37:56.524" endtime="20220921 15:37:58.590"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:56.523" endtime="20220921 15:37:58.591"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.055" endtime="20220921 15:37:58.591"/>
+</suite>
+<suite id="s1-s11" name="DataDrivenUsingCsv" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\DataDrivenUsingCsv.robot">
+<kw name="Open My Browser" library="LoginResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.903" level="INFO">Opening browser 'ff' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<msg timestamp="20220921 15:36:33.908" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\3\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.889" endtime="20220921 15:37:22.400"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:22.401" endtime="20220921 15:37:22.406"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.888" endtime="20220921 15:37:22.406"/>
+</kw>
+<test id="s1-s11-t1" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:22.412" endtime="20220921 15:37:22.413"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:22.416" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:22.415" endtime="20220921 15:37:29.599"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.414" endtime="20220921 15:37:29.599"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:29.603" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:29.602" endtime="20220921 15:37:40.031"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:29.600" endtime="20220921 15:37:40.031"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:40.033" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:40.032" endtime="20220921 15:37:55.918"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:40.032" endtime="20220921 15:37:55.919"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:59.996" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:55.921" endtime="20220921 15:37:59.996"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:55.919" endtime="20220921 15:37:59.996"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.411" endtime="20220921 15:37:59.997"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.407" endtime="20220921 15:37:59.997"/>
+</test>
+<test id="s1-s11-t2" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>admn@yourstore.com</arg>
+<arg>adm1</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:00.002" endtime="20220921 15:38:00.003"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:00.004" level="INFO">Typing text 'admn@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:38:00.004" endtime="20220921 15:38:06.682"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:00.003" endtime="20220921 15:38:06.682"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:06.686" level="INFO">Typing text 'adm1' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:38:06.684" endtime="20220921 15:38:12.803"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:06.683" endtime="20220921 15:38:12.805"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:12.810" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:12.808" endtime="20220921 15:38:17.716"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:12.805" endtime="20220921 15:38:17.718"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:21.785" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:17.722" endtime="20220921 15:38:21.787"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:17.719" endtime="20220921 15:38:21.789"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:00.001" endtime="20220921 15:38:21.790"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:59.998" endtime="20220921 15:38:21.791"/>
+</test>
+<test id="s1-s11-t3" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>admi@yourstore.com</arg>
+<arg>adm2</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:21.803" endtime="20220921 15:38:21.804"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:21.807" level="INFO">Typing text 'admi@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:38:21.806" endtime="20220921 15:38:27.875"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:21.805" endtime="20220921 15:38:27.877"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:27.882" level="INFO">Typing text 'adm2' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:38:27.880" endtime="20220921 15:38:34.001"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:27.878" endtime="20220921 15:38:34.002"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:34.006" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:34.005" endtime="20220921 15:38:38.767"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:34.003" endtime="20220921 15:38:38.768"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:42.812" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:38.770" endtime="20220921 15:38:42.813"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:38.769" endtime="20220921 15:38:42.814"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:21.799" endtime="20220921 15:38:42.815"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:21.793" endtime="20220921 15:38:42.816"/>
+</test>
+<kw name="Close Browsers" library="LoginResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220921 15:38:42.820" endtime="20220921 15:38:45.668"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:42.818" endtime="20220921 15:38:45.670"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:31.790" endtime="20220921 15:38:45.671"/>
+</suite>
+<suite id="s1-s12" name="DataDrivenUsingExcel" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\DataDrivenUsingExcel.robot">
+<kw name="Open My Browser" library="LoginResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:35.652" level="INFO">Opening browser 'ff' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<msg timestamp="20220921 15:36:35.654" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\4\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:35.652" endtime="20220921 15:37:22.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:22.313" endtime="20220921 15:37:22.318"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:35.651" endtime="20220921 15:37:22.319"/>
+</kw>
+<test id="s1-s12-t1" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:22.324" endtime="20220921 15:37:22.325"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:22.330" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:22.326" endtime="20220921 15:37:30.031"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.325" endtime="20220921 15:37:30.032"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:30.035" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:30.033" endtime="20220921 15:37:36.886"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:30.032" endtime="20220921 15:37:36.887"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:36.889" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:37:36.888" endtime="20220921 15:37:45.960"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:36.887" endtime="20220921 15:37:45.960"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:37:51.032" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:37:45.963" endtime="20220921 15:37:51.032"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:45.963" endtime="20220921 15:37:51.033"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.323" endtime="20220921 15:37:51.033"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:22.320" endtime="20220921 15:37:51.034"/>
+</test>
+<test id="s1-s12-t2" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:51.040" endtime="20220921 15:37:51.041"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:51.044" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:51.042" endtime="20220921 15:37:58.330"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.041" endtime="20220921 15:37:58.330"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:58.333" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:37:58.332" endtime="20220921 15:38:04.585"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:58.331" endtime="20220921 15:38:04.586"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:04.588" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:04.587" endtime="20220921 15:38:10.250"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:04.586" endtime="20220921 15:38:10.250"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:14.275" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:10.252" endtime="20220921 15:38:14.275"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:10.251" endtime="20220921 15:38:14.276"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.039" endtime="20220921 15:38:14.276"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:51.035" endtime="20220921 15:38:14.277"/>
+</test>
+<test id="s1-s12-t3" name="LoginTestWithExcelSheet using" line="11">
+<kw name="Invalid Login">
+<arg>adm@yourstore.com</arg>
+<arg>adm</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:14.282" endtime="20220921 15:38:14.283"/>
+</kw>
+<kw name="Input username" library="LoginResources">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:14.285" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:38:14.285" endtime="20220921 15:38:20.362"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.284" endtime="20220921 15:38:20.363"/>
+</kw>
+<kw name="Input pwd" library="LoginResources">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:20.365" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220921 15:38:20.364" endtime="20220921 15:38:26.438"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:20.363" endtime="20220921 15:38:26.438"/>
+</kw>
+<kw name="Click login button" library="LoginResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:26.439" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:26.439" endtime="20220921 15:38:31.256"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:26.438" endtime="20220921 15:38:31.256"/>
+</kw>
+<kw name="Error message should be visible" library="LoginResources">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220921 15:38:35.288" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220921 15:38:31.257" endtime="20220921 15:38:35.289"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:31.257" endtime="20220921 15:38:35.290"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.281" endtime="20220921 15:38:35.291"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:14.278" endtime="20220921 15:38:35.291"/>
+</test>
+<kw name="Close Browsers" library="LoginResources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220921 15:38:35.296" endtime="20220921 15:38:38.138"/>
+</kw>
+<status status="PASS" starttime="20220921 15:38:35.294" endtime="20220921 15:38:38.138"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:31.272" endtime="20220921 15:38:38.139"/>
+</suite>
+<suite id="s1-s13" name="DropDown" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\DropDown.robot">
+<test id="s1-s13-t1" name="Handling DropDowns and Lists" line="9">
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20220921 15:36:31.978" level="INFO">${speed} = 0 seconds</msg>
+<status status="PASS" starttime="20220921 15:36:31.977" endtime="20220921 15:36:31.978"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:36:31.978" endtime="20220921 15:36:31.979"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:31.980" level="INFO">Opening browser 'ff' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<msg timestamp="20220921 15:36:32.015" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\5\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:31.979" endtime="20220921 15:37:19.765"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:19.765" endtime="20220921 15:37:19.782"/>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<msg timestamp="20220921 15:37:19.783" level="INFO">${time} = 5 seconds</msg>
+<status status="PASS" starttime="20220921 15:37:19.782" endtime="20220921 15:37:19.783"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:19.783" endtime="20220921 15:37:19.784"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>AUTOMATION PRACTICE ME</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220921 15:37:19.785" endtime="20220921 15:37:19.911"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:19.912" endtime="20220921 15:37:19.913"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220921 15:37:19.913" endtime="20220921 15:37:21.931"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>Customer roles</arg>
+<arg>Europe</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220921 15:37:21.932" level="INFO">Selecting options from selection list 'Customer roles' by label Europe.</msg>
+<msg timestamp="20220921 15:37:38.266" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="5-selenium-screenshot-1.png"&gt;&lt;img src="5-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220921 15:37:38.268" level="FAIL">List with locator 'Customer roles' not found.</msg>
+<status status="FAIL" starttime="20220921 15:37:21.931" endtime="20220921 15:37:38.348"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.348" endtime="20220921 15:37:38.349"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.350" endtime="20220921 15:37:38.350"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.350" endtime="20220921 15:37:38.351"/>
+</kw>
+<kw name="Unselect From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.351" endtime="20220921 15:37:38.351"/>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.352" endtime="20220921 15:37:38.352"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.353" endtime="20220921 15:37:38.353"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220921 15:37:38.353" endtime="20220921 15:37:38.353"/>
+</kw>
+<status status="FAIL" starttime="20220921 15:36:31.972" endtime="20220921 15:37:38.355">List with locator 'Customer roles' not found.</status>
+</test>
+<status status="FAIL" starttime="20220921 15:36:31.013" endtime="20220921 15:37:38.356"/>
+</suite>
+<suite id="s1-s14" name="Frames" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\Frames.robot">
+<test id="s1-s14-t1" name="Handling Alerts" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.479" level="INFO">Opening browser 'ff' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
+<msg timestamp="20220921 15:36:33.481" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\6\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.479" endtime="20220921 15:37:25.428"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:37:25.429" endtime="20220921 15:37:25.430"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220921 15:37:25.432" level="INFO">Selecting frame 'packageListFrame'.</msg>
+<status status="PASS" starttime="20220921 15:37:25.430" endtime="20220921 15:37:30.366"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:30.367" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20220921 15:37:30.366" endtime="20220921 15:37:40.628"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20220921 15:37:40.628" endtime="20220921 15:37:46.052"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220921 15:37:46.056" level="INFO">Selecting frame 'packageFrame'.</msg>
+<status status="PASS" starttime="20220921 15:37:46.052" endtime="20220921 15:37:51.032"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>WebDriver</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:51.033" level="INFO">Clicking link 'WebDriver'.</msg>
+<status status="PASS" starttime="20220921 15:37:51.032" endtime="20220921 15:37:59.011"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20220921 15:37:59.011" endtime="20220921 15:38:01.349"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220921 15:38:01.350" level="INFO">Selecting frame 'classFrame'.</msg>
+<status status="PASS" starttime="20220921 15:38:01.349" endtime="20220921 15:38:05.385"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Help</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:05.386" level="INFO">Clicking link 'Help'.</msg>
+<status status="PASS" starttime="20220921 15:38:05.385" endtime="20220921 15:38:11.986"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20220921 15:38:11.986" endtime="20220921 15:38:14.013"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.477" endtime="20220921 15:38:14.013"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.637" endtime="20220921 15:38:14.014"/>
+</suite>
+<suite id="s1-s15" name="InputBox" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\InputBox.robot">
+<test id="s1-s15-t1" name="TestingInputBox" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:33.245" level="INFO">Opening browser 'ff' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg timestamp="20220921 15:36:33.267" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\7\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:33.244" endtime="20220921 15:37:23.018"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:23.019" endtime="20220921 15:37:23.023"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>nopCommerce demo store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220921 15:37:23.027" level="INFO">Page title is 'nopCommerce demo store'.</msg>
+<status status="PASS" starttime="20220921 15:37:23.023" endtime="20220921 15:37:23.027"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:23.029" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20220921 15:37:23.027" endtime="20220921 15:37:27.472"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${"email_txt"}</var>
+<arg>id:Email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220921 15:37:27.473" level="INFO">${"email_txt"} = id:Email</msg>
+<status status="PASS" starttime="20220921 15:37:27.473" endtime="20220921 15:37:27.473"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220921 15:37:28.287" level="INFO">Element 'id:Email' is displayed.</msg>
+<status status="PASS" starttime="20220921 15:37:27.474" endtime="20220921 15:37:28.287"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220921 15:37:28.287" endtime="20220921 15:37:28.356"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:28.357" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220921 15:37:28.357" endtime="20220921 15:37:29.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220921 15:37:34.047" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220921 15:37:29.021" endtime="20220921 15:37:34.047"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220921 15:37:34.047" endtime="20220921 15:37:34.388"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220921 15:37:37.406" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220921 15:37:34.388" endtime="20220921 15:37:37.407"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:37.408" endtime="20220921 15:37:43.982"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:33.243" endtime="20220921 15:37:43.983"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.587" endtime="20220921 15:37:43.984"/>
+</suite>
+<suite id="s1-s16" name="Keyword" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\Keyword.robot">
+<test id="s1-s16-t1" name="Testing Keyword" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:52.777" level="INFO">Opening browser 'ff' to base url 'https://www.google.com'.</msg>
+<msg timestamp="20220921 15:36:52.778" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\8\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:52.776" endtime="20220921 15:37:44.838"/>
+</kw>
+<kw name="Get Current Time As String" library="Custom_Lib">
+<var>${search}</var>
+<arg>self</arg>
+<msg timestamp="20220921 15:37:44.839" level="INFO">${search} = 20220921153744</msg>
+<status status="PASS" starttime="20220921 15:37:44.838" endtime="20220921 15:37:44.840"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.842" level="INFO">Typing text '20220921153744' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20220921 15:37:44.840" endtime="20220921 15:37:52.944"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${search}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:52.945" endtime="20220921 15:37:52.945"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:52.946" endtime="20220921 15:37:58.145"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:52.774" endtime="20220921 15:37:58.146"/>
+</test>
+<test id="s1-s16-t2" name="Signing In To Sauce Demo" line="18">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>ff</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:37:58.155" level="INFO">Opening browser 'ff' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20220921 15:37:58.156" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\8\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220921 15:37:58.154" endtime="20220921 15:38:05.817"/>
+</kw>
+<status status="PASS" starttime="20220921 15:37:58.147" endtime="20220921 15:38:05.817"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:32.216" endtime="20220921 15:38:05.819"/>
+</suite>
+<suite id="s1-s17" name="MultipleBrowser" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\MultipleBrowser.robot">
+<test id="s1-s17-t1" name="MultipleBrowsers" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:36:32.983" endtime="20220921 15:36:32.984"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.985" level="INFO">Opening browser 'ff' to base url 'https://www.bing.com/'.</msg>
+<msg timestamp="20220921 15:36:32.986" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\9\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.984" endtime="20220921 15:37:26.154"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:26.155" endtime="20220921 15:37:28.174"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:37:28.175" level="INFO">Opening browser 'ff' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20220921 15:37:28.177" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\9\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220921 15:37:28.174" endtime="20220921 15:37:40.288"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:40.288" endtime="20220921 15:37:42.297"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20220921 15:37:42.297" endtime="20220921 15:37:42.298"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220921 15:37:49.976" level="INFO">${title} = Bing</msg>
+<status status="PASS" starttime="20220921 15:37:42.298" endtime="20220921 15:37:49.976"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:49.976" endtime="20220921 15:37:49.977"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20220921 15:37:49.978" endtime="20220921 15:37:49.978"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220921 15:37:51.988" level="INFO">${title2} = Google</msg>
+<status status="PASS" starttime="20220921 15:37:49.979" endtime="20220921 15:37:51.988"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:51.988" endtime="20220921 15:37:51.989"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:51.989" endtime="20220921 15:37:57.048"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.982" endtime="20220921 15:37:57.049"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.500" endtime="20220921 15:37:57.050"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 17 executions.</doc>
+<status status="FAIL" starttime="20220921 15:36:30.934" endtime="20220921 15:39:31.579"/>
+</suite>
+<statistics>
+<total>
+<stat pass="24" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="24" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Alerts">Suites.Alerts</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="NavigationTest">Suites.NavigationTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="RadioButtons">Suites.RadioButtons</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="TC1">Suites.TC1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="TabbedWindows">Suites.TabbedWindows</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="TableHandling">Suites.TableHandling</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="UserKeywords">Suites.UserKeywords</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s8" name="WaitAndTime">Suites.WaitAndTime</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s9" name="CloseSingleAndMultipleBrowsers">Suites.CloseSingleAndMultipleBrowsers</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s10" name="DataDriven">Suites.DataDriven</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s11" name="DataDrivenUsingCsv">Suites.DataDrivenUsingCsv</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s12" name="DataDrivenUsingExcel">Suites.DataDrivenUsingExcel</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s13" name="DropDown">Suites.DropDown</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s14" name="Frames">Suites.Frames</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s15" name="InputBox">Suites.InputBox</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s16" name="Keyword">Suites.Keyword</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s17" name="MultipleBrowser">Suites.MultipleBrowser</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220921 15:37:59.998" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingCsv'.</msg>
+<msg timestamp="20220921 15:38:21.793" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingCsv'.</msg>
+<msg timestamp="20220921 15:37:51.035" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingExcel'.</msg>
+<msg timestamp="20220921 15:38:14.278" level="WARN">Multiple tests with name 'LoginTestWithExcelSheet using' executed in suite 'Suites.DataDrivenUsingExcel'.</msg>
+<msg timestamp="20220921 15:36:52.771" level="WARN">Imported library 'C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Resources\CreatingKeywords.py' contains no keywords.</msg>
+</errors>
+</robot>

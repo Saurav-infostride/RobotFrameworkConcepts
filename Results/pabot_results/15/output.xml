@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:36:31.239" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="UserKeywords" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\UserKeywords.robot">
+<test id="s1-s1-t1" name="TC1" line="11">
+<kw name="launchBrowser" library="Resource">
+<var>${PageTitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.981" level="INFO">Opening browser 'ff' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20220921 15:36:32.982" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\15\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.980" endtime="20220921 15:37:39.183"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:39.183" endtime="20220921 15:37:39.193"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220921 15:37:39.197" level="INFO">${title} = Google</msg>
+<status status="PASS" starttime="20220921 15:37:39.193" endtime="20220921 15:37:39.197"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:39.197" endtime="20220921 15:37:44.125"/>
+</kw>
+<msg timestamp="20220921 15:37:44.126" level="INFO">${PageTitle} = Google</msg>
+<status status="PASS" starttime="20220921 15:36:32.979" endtime="20220921 15:37:44.127"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PageTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.127" endtime="20220921 15:37:44.127"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.978" endtime="20220921 15:37:44.128"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.397" endtime="20220921 15:37:44.129"/>
+</suite>
+<status status="PASS" starttime="20220921 15:36:31.332" endtime="20220921 15:37:44.131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="UserKeywords">Suites.UserKeywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

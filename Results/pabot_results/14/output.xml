@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:36:31.108" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TableHandling" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\TableHandling.robot">
+<test id="s1-s1-t1" name="TableValidations" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.991" level="INFO">Opening browser 'firefox' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg timestamp="20220921 15:36:32.992" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\14\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.990" endtime="20220921 15:37:36.075"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220921 15:37:36.075" endtime="20220921 15:37:36.082"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.300" level="INFO">${rows} = 7</msg>
+<status status="PASS" starttime="20220921 15:37:36.082" endtime="20220921 15:37:44.300"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${cols}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.310" level="INFO">${cols} = 4</msg>
+<status status="PASS" starttime="20220921 15:37:44.300" endtime="20220921 15:37:44.311"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.311" endtime="20220921 15:37:44.312"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${cols}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.312" endtime="20220921 15:37:44.313"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${data}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[5]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:37:44.859" level="INFO">${data} = Master In Selenium</msg>
+<status status="PASS" starttime="20220921 15:37:44.313" endtime="20220921 15:37:44.859"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220921 15:37:44.859" endtime="20220921 15:37:44.860"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" starttime="20220921 15:37:44.861" endtime="20220921 15:37:45.014"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20220921 15:37:49.474" level="INFO">Table cell contains 'Mukesh'.</msg>
+<status status="PASS" starttime="20220921 15:37:45.015" endtime="20220921 15:37:49.475"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20220921 15:37:49.475" endtime="20220921 15:37:51.191"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:37:51.191" endtime="20220921 15:37:54.648"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.986" endtime="20220921 15:37:54.649"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.335" endtime="20220921 15:37:54.651"/>
+</suite>
+<status status="PASS" starttime="20220921 15:36:31.271" endtime="20220921 15:37:54.653"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TableHandling">Suites.TableHandling</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

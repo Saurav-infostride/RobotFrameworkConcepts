@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220921 15:36:31.045" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TabbedWindows" source="C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\TestCases\TabbedWindows.robot">
+<test id="s1-s1-t1" name="TabbedWindowsTest" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220921 15:36:32.358" level="INFO">Opening browser 'ff' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<msg timestamp="20220921 15:36:32.360" level="INFO">Firefox driver log is always forced to to: C:\Users\SauravSharma\PycharmProjects\RobotFrameworkPratice\RobotFramework\Results\pabot_results\13\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220921 15:36:32.357" endtime="20220921 15:38:03.564"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220921 15:38:03.565" endtime="20220921 15:38:03.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a//button[contains(text(),'click')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:03.567" level="INFO">Clicking element 'xpath://a//button[contains(text(),'click')]'.</msg>
+<status status="PASS" starttime="20220921 15:38:03.566" endtime="20220921 15:38:08.836"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title:Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220921 15:38:08.836" endtime="20220921 15:38:35.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_navbar"]/ul/li[4]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220921 15:38:35.076" level="INFO">Clicking element 'xpath://*[@id="main_navbar"]/ul/li[4]/a/span'.</msg>
+<status status="PASS" starttime="20220921 15:38:35.074" endtime="20220921 15:38:39.860"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220921 15:38:39.860" endtime="20220921 15:38:43.110"/>
+</kw>
+<status status="PASS" starttime="20220921 15:36:32.355" endtime="20220921 15:38:43.111"/>
+</test>
+<status status="PASS" starttime="20220921 15:36:31.264" endtime="20220921 15:38:43.112"/>
+</suite>
+<status status="PASS" starttime="20220921 15:36:31.134" endtime="20220921 15:38:43.113"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TabbedWindows">Suites.TabbedWindows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
